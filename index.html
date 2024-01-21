@@ -19,7 +19,7 @@
     <!-- CSS Style Setup -->
     <style>
         /*Manrope FOnt*/
-        .praimary-font {
+        .font-manrope {
             font-family: 'Manrope', sans-serif;
         }
 
@@ -29,48 +29,131 @@
     </style>
 </head>
 
-<body class=".primary-font">
+<body class="font-manrope">
     <!-- Header Start -->
     <!-- pl-52 pt-11 pr-16 pb-48 w-full -->
-    <header class="container mx-auto pt-11 flex justify-between items-center">
+    <header class="border-2 border-green-500 container mx-auto">
+        <div class="border-2 border-red-800 mx-4 my-10 flex flex-col items-center md:flex-row md:justify-center">
 
-        <!-- left banner -->
-        <div class="w-1/2 space-y-[60px]">
-            <div class="space-y-[60px]">
-                <h1 class="text-7xl font-extrabold ">It's good <br>
-                    tea time at The <br>
-                    Tea House
-                </h1>
-                <p class="text-lg opacity-55">
-                    Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
-                </p>
-            </div>
-            <div class="">
-                <button
-                    class=".btn w-48 h-16 rounded-lg text-white text-xl space-x-2 bg-orange-600 flex justify-center items-center">
-                    <p>Explore More</p>
-                    <img src="images/arrow.png" alt="Arrow" width="22px" height="22px">
-                </button>
-            </div>
-        </div>
+            <!-- left banner -->
+            <!-- md:w-1/2 space-y-[30px] md:space-y-[60px] -->
+            <div class="border-2 border-purple-900 md:w-1/2">
+                <div class=" space-y-[30px] md:space-y-[50px]">
+                    <h1 class="text-5xl lg:text-7xl font-extrabold leading-[4rem]">
+                        It's good <br>
+                        tea time at The <br>
+                        Tea House
+                    </h1>
+                    <p class="text-lg opacity-55">
+                        Tea and Botanical Solutions Supplier Give Optimum
+                        Satisfaction To Your Taste Buds.
+                    </p>
+                </div>
 
-        <!-- right banner -->
-        <div class="w-1/2">
+                <div class="border-2 border-blue-800 ">
+                    <button class=".btn w-48 h-16 rounded-lg text-white 
+                    text-xl space-x-2 bg-orange-600 flex justify-center 
+                    items-center">
+                        <p>Explore More</p>
+                        <img src="images/arrow.png" alt="Arrow" width="22px" height="22px">
+                    </button>
+                </div>
+            </div>
+
+            <!-- right banner -->
+            <div class="border-2 border-red-400 md:w-1/2">
+                <img src="/images/banner.png" class="" />
+                <!-- ratings badge -->
+                <div class="rounded-md -mt-16 flex items-center gap-4 drop-shadow-lg bg-white p-5 w-56">
+                    <img src="images/Group 5.png" width="40px" height="37px">
+                    <div>
+                        <h3 class="text-3xl font-semibold">5.00</h3>
+                        <p>Trust Pilot Ratings</p>
+                    </div>
+                </div>
+
+
+
+                <!-- <div class="border-4 border-indigo-200 md:w-1/2">
             <div class="relative">
                 <img src="images/banner.png" alt="Banner Image" width="1500px" height="auto">
             </div>
-            <div class="absolute top-[400px] right-[435px] bg-white shadow-md rounded-lg w-60 h-24 bg-opacity-6 p-6 flex gap-3 items-center">
+            
+            <div class="absolute md:top-[400px] md:right-[325px] 
+                bg-white shadow-md rounded-lg w-60 h-24 
+                bg-opacity-6 p-6 flex gap-3 items-center">
                 <img src="images/Group 5.png" width="40px" height="37px">
                 <div>
                     <h5 class="text-3xl font-semibold">5.00</h5>
                     <p class="text-sm opacity-55">Trust Pilot Ratings</p>
                 </div>
-            </div>
+            </div> -->
 
-        </div>
+            </div>
+            </divc>
     </header>
 
+    <!-- Our Featured Section -->
+    <main class="border-4 border-pink-200 container mx-auto w-full pl-4 md:pl-48 pt-11 pr-16 pb-40">
+        <div class="border-4 border-pink-200 text-center px-6 md:px-72 space-y-3">
+            <h1 class="text-4xl md:text-[2.8em] font-semibold">Our Featured Products</h1>
+            <p>
+                There are many variations of passages of Lorem Ipsum available, but the majority have suffered
+                alteration in some form, by injected humour, or randomised words which don't look even slightly
+                believable.
+            </p>
+        </div>
+        <!-- card 1 -->
+        <div class="w-1/2 border-4 border-fuchsia-400 pt-14">
+            <div class=" md:w-64 md:h-96 pt-10 bg-slate-50  flex flex-col justify-center 
+            items-center bg-gradient-to-t from-transparent to-slate-200 ">
+                <img class="pb-8" src="images/tea-1.png" width="130px" height="205px">
+            </div>
 
+            <div class="">
+                <h3 class="text-2xl text-center font-semibold pb-3">Milk Tea</h3>
+                <p class="text-center text-[13px] opacity-80">Creamer could be replaced by fresh milk</p>
+            </div>
+        </div>
+
+        <div class="pt-14">
+            <div class=" md:w-64 md:h-96 pt-10 bg-slate-50  flex flex-col justify-center 
+            items-center bg-gradient-to-t from-transparent to-slate-200 ">
+                <img class="pb-8" src="images/tea-1.png" width="130px" height="205px">
+            </div>
+
+            <div class="">
+                <h3 class="text-2xl text-center font-semibold pb-3">Milk Tea</h3>
+                <p class="text-center text-[13px] opacity-80">Creamer could be replaced by fresh milk</p>
+            </div>
+        </div>
+
+        <div class="pt-14">
+            <div class=" md:w-64 md:h-96 pt-10 bg-slate-50  flex flex-col justify-center 
+            items-center bg-gradient-to-t from-transparent to-slate-200 ">
+                <img class="pb-8" src="images/tea-1.png" width="130px" height="205px">
+            </div>
+
+            <div class="">
+                <h3 class="text-2xl text-center font-semibold pb-3">Milk Tea</h3>
+                <p class="text-center text-[13px] opacity-80">Creamer could be replaced by fresh milk</p>
+            </div>
+        </div>
+
+        <div class="pt-14">
+            <div class=" md:w-64 md:h-96 pt-10 bg-slate-50  flex flex-col justify-center 
+            items-center bg-gradient-to-t from-transparent to-slate-200 ">
+                <img class="pb-8" src="images/tea-1.png" width="130px" height="205px">
+            </div>
+
+            <div class="">
+                <h3 class="text-2xl text-center font-semibold pb-3">Milk Tea</h3>
+                <p class="text-center text-[13px] opacity-80">Creamer could be replaced by fresh milk</p>
+            </div>
+        </div>
+
+
+    </main>
 
 
 
